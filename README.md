@@ -9,8 +9,8 @@ This folder contains:
 
 The format of the README file is as follows:
 * Overivew of project goals
-* Approach
-* Considerations
+* How the project goals were met
+* Detailed approach
 * etc
 
 #Overview of project goals
