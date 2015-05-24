@@ -68,24 +68,7 @@ A full description of variable names can be found in the CodeBook.md file availa
 * 561 feature vector names as described in the features.txt file available. The topic of further modifying the description of these variables is subject to debate and there certainly multiple possibilities. The approach preferred in this solution is to keep the name of the features as defined in the source file. The main reason behind this is that further modifying the description can add additional confusion to the already complicated calculations being used here. In addition, this format allows for the feature vector column names to be referenced in the original documentation as no significant alternations are made. This reasoning was also supported by additional students in the course project forum. Please see more details here:
 https://class.coursera.org/getdata-014/forum/thread?thread_id=30
 * 9 * 2 description values for the mean and standard deviation calculations as follows: 
-"Angular velocity vector X axis_mean"       
-"Angular velocity vector X axis_sd"         
-"Angular velocity vector Y axis_mean"       
-"Angular velocity vector Y axis_sd"         
-"Angular velocity vector Z axis_mean"       
-"Angular velocity vector Z axis_sd"         
-"Smartphone acceleration signal X axis_mean"
-"Smartphone acceleration signal X axis_sd"  
-"Smartphone acceleration signal Y axis_mean"
-"Smartphone acceleration signal Y axis_sd"
-"Smartphone acceleration signal Z axis_mean"
-"Smartphone acceleration signal Z axis_sd"
-"Body acceleration signal X axis_mean"      
-"Body acceleration signal X axis_sd"        
-"Body acceleration signal Y axis_mean"      
-"Body acceleration signal Y axis_sd"        
-"Body acceleration signal Z axis_mean"      
-"Body acceleration signal Z axis_sd"     
+"Angular velocity vector X axis_mean", "Angular velocity vector X axis_sd", "Angular velocity vector Y axis_mean", "Angular velocity vector Y axis_sd", "Angular velocity vector Z axis_mean", "Angular velocity vector Z axis_sd", "Smartphone acceleration signal X axis_mean", "Smartphone acceleration signal X axis_sd", "Smartphone acceleration signal Y axis_mean", "Smartphone acceleration signal Y axis_sd", "Smartphone acceleration signal Z axis_mean", "Smartphone acceleration signal Z axis_sd", "Body acceleration signal X axis_mean", "Body acceleration signal X axis_sd", "Body acceleration signal Y axis_mean", "Body acceleration signal Y axis_sd", "Body acceleration signal Z axis_mean", "Body acceleration signal Z axis_sd".
 
 ####From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
