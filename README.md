@@ -11,7 +11,7 @@ The format of the README file is as follows:
 * Overivew of project goals
 * How the project goals were met
 * Detailed approach
-* etc
+* Additional Remarks
 
 #Overview of project goals
 
@@ -47,7 +47,14 @@ The merged data set contained the following columns:
 * 9 x 128 columns representing the 128 readings for each measurement as part of the Inertials Signal Data
 
 ####Extracts only the measurements on the mean and standard deviation for each measurement.
-As mentioned previously, all 128 readings from each of the measurements 
+As mentioned previously, all 128 readings from each of the measurements were loaded in the raw format but given according column names (i.e. the readings from body_acc_x_test were labelled body_acc_x_test_1 through body_acc_x_test_128). The mean and standard deviation for each measurement was then computed and added to the end of the data set with appropriate column names. Finally, the 128 x 9 raw entries for all measurements were removed from the data set.
+
+The data set contained the following columns following this step:
+* Subject ID
+* Activity ID
+* Data Source (test or train)
+* 561 columns representing the feature vector readings
+* 9 x 2 columns representing the mean and standard deviation for each of the 9 measurements
 
 ####Uses descriptive activity names to name the activities in the data set
 ####Appropriately labels the data set with descriptive variable names
