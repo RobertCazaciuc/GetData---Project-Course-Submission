@@ -11,6 +11,7 @@ The format of the README file is as follows:
 * Overivew of project goals
 * How the project goals were met
 * Detailed approach
+* How to read the final table
 * Additional Remarks
 
 #Overview of project goals
@@ -67,8 +68,13 @@ A full description of variable names can be found in the CodeBook.md file availa
 * Data Source - information regarding where the data was read from (not used in the final output)
 * 561 feature vector names as described in the features.txt file available. The topic of further modifying the description of these variables is subject to debate and there certainly multiple possibilities. The approach preferred in this solution is to keep the name of the features as defined in the source file. The main reason behind this is that further modifying the description can add additional confusion to the already complicated calculations being used here. In addition, this format allows for the feature vector column names to be referenced in the original documentation as no significant alternations are made. This reasoning was also supported by additional students in the course project forum. Please see more details here:
 https://class.coursera.org/getdata-014/forum/thread?thread_id=30
-* 9 * 2 description values for the mean and standard deviation calculations as follows: 
-"Angular velocity vector X axis_mean", "Angular velocity vector X axis_sd", "Angular velocity vector Y axis_mean", "Angular velocity vector Y axis_sd", "Angular velocity vector Z axis_mean", "Angular velocity vector Z axis_sd", "Smartphone acceleration signal X axis_mean", "Smartphone acceleration signal X axis_sd", "Smartphone acceleration signal Y axis_mean", "Smartphone acceleration signal Y axis_sd", "Smartphone acceleration signal Z axis_mean", "Smartphone acceleration signal Z axis_sd", "Body acceleration signal X axis_mean", "Body acceleration signal X axis_sd", "Body acceleration signal Y axis_mean", "Body acceleration signal Y axis_sd", "Body acceleration signal Z axis_mean", "Body acceleration signal Z axis_sd".
+* 9 * 2 description values for the mean and standard deviation calculations based on the following format examples
+"Angular velocity vector X axis_mean", "Angular velocity vector X axis_sd", etc. Full list can be found in the CodeBook.md file
 
 ####From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+To create the final data set the following steps were taken: 
+* The data.frame table computed in previous excercises was trasnsformed into a data frame table object to bused with the ddplyr package
+* The group_by function was then used to group the variables by Activity and Subject
+* A mean function was applied to all columns available in the data set, minus Activity, Subject ID and Data Source. The summarize_each function was used to achieve this
+* Finally, each of the mean calculated values was added with a "mean.of." in front of the descriptive variable name to reflect the changes
 
