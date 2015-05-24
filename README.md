@@ -6,11 +6,12 @@ This folder contains:
 * README.md Markdown file describing the approach and considerations
 * CodeBook.md Markdown file describing the variables and readings
 
-
 The format of the README file is as follows:
 * Overivew of project goals
 * How the project goals were met
 * How to read the final table
+
+Please note that a detailed description of the steps performed in run_analysis.R was included in the R file itself. The detailed walktrough of the code was left of this document but a summary is provided.
 
 #Overview of project goals
 
