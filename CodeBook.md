@@ -1,7 +1,11 @@
 #DATA DICTIONARY 
 
+### Activity Name
+
 * Activity.Name - The name of the activity performed by each individual
     Possible values: {WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+
+### Subject ID
 
 * Subject.ID - the ID of the individual who is being tested
 
@@ -625,3 +629,34 @@ The complete list of variables of each feature vector is available in 'features.
 *  "mean.of.angle.X.gravityMean."
 *  "mean.of.angle.Y.gravityMean."
 *  "mean.of.angle.Z.gravityMean."
+
+### Mean and standard deviation for the 9 measurements
+
+Original description of variables
+
+- 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
+
+- 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
+
+- 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
+
+In addition to the above the mean and sd for each variable was computed
+
+*  "mean.of.Angular.velocity.vector.X.axis_mean"
+*  "mean.of.Angular.velocity.vector.X.axis_sd"
+*  "mean.of.Angular.velocity.vector.Y.axis_mean"
+*  "mean.of.Angular.velocity.vector.Y.axis_sd"
+*  "mean.of.Angular.velocity.vector.Z.axis_mean"
+*  "mean.of.Angular.velocity.vector.Z.axis_sd"
+*  "mean.of.Smartphone.acceleration.signal.X.axis_mean"
+*  "mean.of.Smartphone.acceleration.signal.X.axis_sd"
+*  "mean.of.Smartphone.acceleration.signal.Y.axis_mean"
+*  "mean.of.Smartphone.acceleration.signal.Y.axis_sd"
+*  "mean.of.Smartphone.acceleration.signal.Z.axis_mean"
+*  "mean.of.Smartphone.acceleration.signal.Z.axis_sd"
+*  "mean.of.Body.acceleration.signal.X.axis_mean"
+*  "mean.of.Body.acceleration.signal.X.axis_sd"
+*  "mean.of.Body.acceleration.signal.Y.axis_mean"
+*  "mean.of.Body.acceleration.signal.Y.axis_sd"
+*  "mean.of.Body.acceleration.signal.Z.axis_mean"
+*  "mean.of.Body.acceleration.signal.Z.axis_sd"
