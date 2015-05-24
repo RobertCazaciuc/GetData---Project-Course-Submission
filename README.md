@@ -79,5 +79,5 @@ To create the final data set the following steps were taken:
 * Finally, each of the mean calculated values was added with a "mean.of." in front of the descriptive variable name to reflect the changes
 
 #How to read the final table
-data <- read.table("UCI HAR Dataset/finalOutput.txt", header=TRUE)
-View(data)
+*data <- read.table("UCI HAR Dataset/finalOutput.txt", header=TRUE)
+*View(data)
