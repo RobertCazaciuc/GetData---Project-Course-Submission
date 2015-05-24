@@ -57,6 +57,34 @@ The data set contained the following columns following this step:
 * 9 x 2 columns representing the mean and standard deviation for each of the 9 measurements
 
 ####Uses descriptive activity names to name the activities in the data set
+To achieve this task the Activity ID column from the data set was first turned into a factor format. After that the levels were changed to match the descriptive activity name as described in the "activity_labels.txt" file available from the data set. The description of the activity names available were considered to be clear for the purpose of this excercise and required no additional alterations. 
+
 ####Appropriately labels the data set with descriptive variable names
+A full description of variable names can be found in the CodeBook.md file available in the same repository location as this file. Below, a summary of the descriptive names and reasoning can be found:
+
+* Activity Name - self explanatory
+* Subject ID - self explanatory
+* Data Source - information regarding where the data was read from (not used in the final output)
+* 561 feature vector names as described in the features.txt file available. The topic of further modifying the description of these variables is subject to debate and there certainly multiple possibilities. The approach preferred in this solution is to keep the name of the features as defined in the source file. The main reason behind this is that further modifying the description can add additional confusion to the already complicated calculations being used here. In addition, this format allows for the feature vector column names to be referenced in the original documentation as no significant alternations are made. This reasoning was also supported by additional students in the course project forum. Please see more details here:
+https://class.coursera.org/getdata-014/forum/thread?thread_id=30
+* 9 * 2 description values for the mean and standard deviation calculations as follows: [565] "Angular velocity vector X axis_mean"       
+"Angular velocity vector X axis_sd"         
+"Angular velocity vector Y axis_mean"       
+"Angular velocity vector Y axis_sd"         
+"Angular velocity vector Z axis_mean"       
+"Angular velocity vector Z axis_sd"         
+"Smartphone acceleration signal X axis_mean"
+"Smartphone acceleration signal X axis_sd"  
+"Smartphone acceleration signal Y axis_mean"
+"Smartphone acceleration signal Y axis_sd"  
+"Smartphone acceleration signal Z axis_mean"
+"Smartphone acceleration signal Z axis_sd"  
+"Body acceleration signal X axis_mean"      
+"Body acceleration signal X axis_sd"        
+"Body acceleration signal Y axis_mean"      
+"Body acceleration signal Y axis_sd"        
+"Body acceleration signal Z axis_mean"      
+"Body acceleration signal Z axis_sd"     
+
 ####From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
