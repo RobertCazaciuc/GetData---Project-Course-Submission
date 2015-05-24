@@ -13,6 +13,8 @@ The format of the README file is as follows:
 
 Please note that a detailed description of the steps performed in run_analysis.R was included in the R file itself. The detailed walktrough of the code was left of this document but a summary is provided.
 
+However, it is worth mentioning here that the code has been fully automated to download the zip file from the URL provided and extract the data in the current working directory of the user. This also include cheks that allows for multiple runs of the script without any problems.
+
 #Overview of project goals
 
 <Taken from the course description website>
