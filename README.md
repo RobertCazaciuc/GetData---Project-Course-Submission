@@ -2,17 +2,15 @@
 This folders contains all files relevant for the completion of the Course Project for the Getting and Cleaning Data module. 
 
 This folder contains:
-* 1
-* 2
-* 3
-* 4
+* run_analysis.R file that will be used to perform the analysis
+* README.md Markdown file describing the approach and considerations
+* CodeBook.md Markdown file describing the variables and readings
+
 
 The format of the README file is as follows:
 * Overivew of project goals
 * How the project goals were met
-* Detailed approach
 * How to read the final table
-* Additional Remarks
 
 #Overview of project goals
 
