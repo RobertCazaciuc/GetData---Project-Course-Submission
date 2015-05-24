@@ -37,9 +37,18 @@ You should create one R script called run_analysis.R that does the following.
 This section describes how each of the individual project goals was met by the current design
 
 ####Merges the training and the test sets to create one data set.
-The data for the test and train data set was read in turns and the 2 data sets produced were then combined into a single data set using the melting technique described in lectures. Appropriate names were given to each column as the data was loaded in to make it easier to perform the next steps requested. In addition, the Inertials Signal data, although not needed in full length for the final output, was loaded in in the raw format (i.e. all 128 observations from each measurement were loaded)
+The data for the test and train data set were read in turns and the 2 data sets produced were then combined into a single data set using the melting technique described in lectures. Appropriate names were given to each column as the data was loaded in to make it easier to perform the next steps requested. In addition, the Inertials Signal data, although not needed in full length for the final output, was loaded in in the raw format (i.e. all 128 observations from each measurement were loaded)
 
-####Extracts only the measurements on the mean and standard deviation for each measurement. 
+The merged data set contained the following columns:
+* Subject ID
+* Activity ID
+* Data Source (test or train)
+* 561 columns representing the feature vector readings
+* 9 x 128 columns representing the 128 readings for each measurement as part of the Inertials Signal Data
+
+####Extracts only the measurements on the mean and standard deviation for each measurement.
+As mentioned previously, all 128 readings from each of the measurements 
+
 ####Uses descriptive activity names to name the activities in the data set
 ####Appropriately labels the data set with descriptive variable names
 ####From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
