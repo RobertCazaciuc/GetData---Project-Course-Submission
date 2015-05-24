@@ -1,4 +1,4 @@
-# GetData---Project-Course-Submission
+# Getting and Cleaning Data Project Course
 This folders contains all files relevant for the completion of the Course Project for the Getting and Cleaning Data module. 
 
 This folder contains:
